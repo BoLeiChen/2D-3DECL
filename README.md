@@ -90,7 +90,7 @@ CUDA_VISIBLE_DEVICES=[CUDA_VISIBLE_DEVICES] python src/pretrain/run_ddppo.py --e
 ```
 You may need to download PointNav-v1 dataset in Gibson scenes following [here](https://github.com/xinranliang/habitat-lab/tree/alp-pkg#data), and modify relative path to dataset directory and model checkpoint.
 
-### Training and evaluating downstream perception models
+### Training and evaluating downstream object recognition models
 
 Please use following scripts to train Mask-RCNN models:
 
