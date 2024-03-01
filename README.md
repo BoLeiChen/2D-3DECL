@@ -1,5 +1,7 @@
 # 2D-3DECL
 
+The following is an introduction to the usage of our 2D-3D Embodied Contrastive Learning (2D-3DECL) code.
+
 ## Installation
 
 Create conda environment with python>=3.7 and cmake>=3.10:
