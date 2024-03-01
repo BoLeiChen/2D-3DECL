@@ -1,0 +1,46 @@
+ENVIRONMENT:
+  MAX_EPISODE_STEPS: 512
+  SCENE: "none"
+  env_frame_width: 640
+  env_frame_height: 480
+  frame_height: 120
+  frame_width: 160
+  sem_gpu_id: "0"
+  checkpt: "/home/cbl/alp/weight/rednet_semmap_mp3d_tuned.pth"
+  dataset: "gibson"
+  min_depth: 0.5
+  max_depth: 5.0
+  visualize: 0
+  sem_pred_prob_thr: 0.9
+
+
+SIMULATOR:
+  TYPE: Sim-v0
+  ACTION_SPACE_CONFIG: "v2" # v0: stop, forward, left, right; v1: stop, forward, left, right, up, down; v2: forward, left, right
+  FORWARD_STEP_SIZE: 0.25
+  TURN_ANGLE: 30 # left and right action
+  SEED: -1
+  TILT_ANGLE: 10 # up and down
+  AGENT_0:
+    SENSORS: ['RGB_SENSOR', 'DEPTH_SENSOR']
+    HEIGHT: 0.88
+  HABITAT_SIM_V0:
+    GPU_DEVICE_ID: 0
+    ALLOW_SLIDING: False
+  SEMANTIC_SENSOR:
+    WIDTH: 640
+    HEIGHT: 480
+    HFOV: 79
+    POSITION: [0, 0.88, 0]
+  RGB_SENSOR:
+    WIDTH: 640
+    HEIGHT: 480
+    HFOV: 79
+    POSITION: [0, 0.88, 0]
+  DEPTH_SENSOR:
+    WIDTH: 640
+    HEIGHT: 480
+    HFOV: 79
+    MIN_DEPTH: 0.5
+    MAX_DEPTH: 5.0
+    POSITION: [0, 0.88, 0]
