@@ -77,7 +77,7 @@ To test training datasets are downloaded in correct formats, run `python data/ex
 
 ### Training visual representations and exploration policy
 
-Please use following scripts:
+Please use following scripts (We will be releasing pre-trained models shortly.):
 ```bash
 bash scripts/pretrain/run_crl_alp.sh [CUDA_VISIBLE_DEVICES] [num_gpus_per_node]
 ```
